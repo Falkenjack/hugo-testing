@@ -26,7 +26,11 @@ Code is rendered as code, but markdown never rendered inside `acc`?
 
 {{< acc >}}
 
+## Heading for accordion cell
+
 {{< div >}}
+
+_Content of accordion cell containing markdown, possibly code blocks and inline code as below._
 
 {{< highlight python "hl_inline=true, lineNumbersInTable=false" >}}def __init__(args):{{< /highlight >}} (using `{{</* highlight python "hl_inline=true, lineNumbersInTable=false" */>}}`)
 
@@ -46,7 +50,11 @@ Code rendered as markdown first, then as code, then everything (including code) 
 
 {{% acc %}}
 
-{{% div %}}
+## Heading for accordion cell
+
+{{< div >}}
+
+_Content of accordion cell containing markdown, possibly code blocks and inline code as below._
 
 {{% highlight python "hl_inline=true, lineNumbersInTable=false" %}}def __init__(args):{{% /highlight %}} (using `{{%/* highlight python "hl_inline=true, lineNumbersInTable=false" */%}}`)
 
@@ -66,7 +74,11 @@ Code is rendered as code, then everything (including code) is rendered as markdo
 
 {{% acc %}}
 
-{{% div %}}
+## Heading for accordion cell
+
+{{< div >}}
+
+_Content of accordion cell containing markdown, possibly code blocks and inline code as below._
 
 {{< highlight python "hl_inline=true, lineNumbersInTable=false" >}}def __init__(args):{{< /highlight >}} (using `{{</* highlight python "hl_inline=true, lineNumbersInTable=false" */>}}`)
 
@@ -87,7 +99,11 @@ Same as [2.3](#2.3)?
 
 {{% acc %}}
 
+## Heading for accordion cell
+
 {{< div >}}
+
+_Content of accordion cell containing markdown, possibly code blocks and inline code as below._
 
 {{< highlight python "hl_inline=true, lineNumbersInTable=false" >}}def __init__(args):{{< /highlight >}} (using `{{</* highlight python "hl_inline=true, lineNumbersInTable=false" */>}}`)
 
