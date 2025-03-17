@@ -11,7 +11,7 @@ description = "Code in highlight shortcode rendered as markdown"
 
 Works but I want to be able to nest.
 
-{{< highlight python "hl_inline=true, lineNumbersInTable=false" >}}def __init__(args):{{< /highlight >}} (using `{{</* highlight python "hl_inline=true, lineNumbersInTable=false" */>}}`)
+{{< highlight python "hl_inline=true, lineNumbersInTable=false" >}}def __init__(self, args):{{< /highlight >}} (using `{{</* highlight python "hl_inline=true, lineNumbersInTable=false" */>}}`)
 
 
 
@@ -32,7 +32,13 @@ Code is rendered as code, but markdown never rendered inside `acc`?
 
 _Content of accordion cell containing markdown, possibly code blocks and inline code as below._
 
-{{< highlight python "hl_inline=true, lineNumbersInTable=false" >}}def __init__(args):{{< /highlight >}} (using `{{</* highlight python "hl_inline=true, lineNumbersInTable=false" */>}}`)
+{{< highlight python "hl_inline=true, lineNumbersInTable=false" >}}def __init__(self, args):{{< /highlight >}} (using `{{</* highlight python "hl_inline=true, lineNumbersInTable=false" */>}}`)
+
+```python
+def __init__(self, args):
+    """This method is called when the class is instantiated."""
+    self.args = args
+```
 
 {{< /div >}}
 
@@ -56,7 +62,13 @@ Code rendered as markdown first, then as code, then everything (including code) 
 
 _Content of accordion cell containing markdown, possibly code blocks and inline code as below._
 
-{{% highlight python "hl_inline=true, lineNumbersInTable=false" %}}def __init__(args):{{% /highlight %}} (using `{{%/* highlight python "hl_inline=true, lineNumbersInTable=false" */%}}`)
+{{% highlight python "hl_inline=true, lineNumbersInTable=false" %}}def __init__(self, args):{{% /highlight %}} (using `{{%/* highlight python "hl_inline=true, lineNumbersInTable=false" */%}}`)
+
+```python
+def __init__(self, args):
+    """This method is called when the class is instantiated."""
+    self.args = args
+```
 
 {{% /div %}}
 
@@ -80,7 +92,13 @@ Code is rendered as code, then everything (including code) is rendered as markdo
 
 _Content of accordion cell containing markdown, possibly code blocks and inline code as below._
 
-{{< highlight python "hl_inline=true, lineNumbersInTable=false" >}}def __init__(args):{{< /highlight >}} (using `{{</* highlight python "hl_inline=true, lineNumbersInTable=false" */>}}`)
+{{< highlight python "hl_inline=true, lineNumbersInTable=false" >}}def __init__(self, args):{{< /highlight >}} (using `{{</* highlight python "hl_inline=true, lineNumbersInTable=false" */>}}`)
+
+```python
+def __init__(self, args):
+    """This method is called when the class is instantiated."""
+    self.args = args
+```
 
 {{% /div %}}
 
@@ -105,7 +123,13 @@ Same as [2.3](#2.3)?
 
 _Content of accordion cell containing markdown, possibly code blocks and inline code as below._
 
-{{< highlight python "hl_inline=true, lineNumbersInTable=false" >}}def __init__(args):{{< /highlight >}} (using `{{</* highlight python "hl_inline=true, lineNumbersInTable=false" */>}}`)
+{{< highlight python "hl_inline=true, lineNumbersInTable=false" >}}def __init__(self, args):{{< /highlight >}} (using `{{</* highlight python "hl_inline=true, lineNumbersInTable=false" */>}}`)
+
+```python
+def __init__(self, args):
+    """This method is called when the class is instantiated."""
+    self.args = args
+```
 
 {{< /div >}}
 

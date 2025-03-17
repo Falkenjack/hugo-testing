@@ -5,3 +5,6 @@ title = 'Hugo Forum Topic #53952'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+  [markup.highlight]
+    style = 'monokailight'
+    linenos = true
